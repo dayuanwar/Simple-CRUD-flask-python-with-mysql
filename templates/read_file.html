@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>{{title}}</title>
+</head>
+<body>
+  <h2>{{title}}</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for items in data %}
+        <tr>
+          <td>{{items['Id']}}</td>
+          <td>{{items['Name']}}</td>
+          <td>{{items['Price']}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
